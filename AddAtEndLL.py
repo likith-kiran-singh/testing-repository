@@ -39,5 +39,9 @@ ll1.add_end(100)
 ll1.Print_ll()
 """
 Output:
-
+At beginning
+30
+20
+10
+after adding at end
 """
