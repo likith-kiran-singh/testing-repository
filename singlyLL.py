@@ -12,8 +12,16 @@ class LinkedList:
         
 #printlist method will traverse through the linked list and print the data values until the last node
 #it will terminate at last node as the node has next node reference as "None"
-    def CreateList(self,ele):
+    def CreateLL(self,ele):
         newnode=Node(ele)
+        print("Node is created")
+        if (self.head is None):
+            self.head=newNode
+        else:
+            ptr=self.head
+            while (ptr.next is not None):
+                ptr=ptr.next
+                ptr.next=newNode
     def Print_ll(self):
         if self.head is None:
             print("Linked List is Empty!")
